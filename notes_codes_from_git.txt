@@ -1,0 +1,54 @@
+
+https://medium.com/@aklson_DS/how-to-properly-setup-your-github-repository-windows-version-ea596b398b
+
+
+#mkdir ~/Desktop/projects  cd
+
+
+#git clone <repository_URL>
+
+Clone github repisority to desktop folder
+git clone git@github.com:aklson-datascientist/github-example.git
+
+
+#vim python_code.py
+
+
+
+#git status
+Bize değişen git dizininin durumunu verir önceden olmayanları gösterir.
+
+Updating the remote repository or sync-ing it with the local version consists of three steps:
+Staging the changes.
+Committing them.
+Pushing them to the remote repository.
+
+
+#git add python_code.py
+
+Stage değişimlerini git add kodu ile yaptık.
+
+böylece .py filinin durumunun değişmesini onayladık.
+
+
+
+#git commit -m <message>
+
+
+bu konuştla yoruma yazacaklarımızla elimizdeki .py file ini işledik commit ettik. Geriye reposiority e basıp global yapmak kaldı.
+
+
+And once the command is executed, a summary describing the changes committed should appear, as shown below.
+
+
+
+Python_code.py durumunda özet, dosyanın yalnızca bir dosya olduğunu ve bir ekleme olduğunu gösterir; burada ekleme, dosyaya eklediğimiz yazdırma ifadesidir. Daha fazla dosya veya kod eklemek veya silmek gibi daha fazla değişiklik yapmış olsaydık, hepsi görüntülenen özette ekleme ve silme olarak görünür.
+
+
+
+
+#git push origin master
+
+bastık değiştirdik.
+
+And now if I check my github-example repository on Github, I should see the python_code.py file along with the message that I included when I ran the git commit command, as shown below:
